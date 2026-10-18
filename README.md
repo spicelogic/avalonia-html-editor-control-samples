@@ -2,14 +2,15 @@
 
 The quick start hosts the HTML editor in a normal Avalonia desktop window, waits for readiness, loads Unicode content and exports the current complete document through an awaited API. The scenario gallery demonstrates application integration with one editor and six focused examples.
 
-Use .NET SDK 8 or newer:
+Use .NET SDK 9.0.300 or newer (SDK 10 recommended), targeting .NET 8 or newer.
+Avalonia 12.1.4's analyzers require the newer compiler:
 
 ```shell
 dotnet run --project Quickstart/Quickstart.csproj
 dotnet run --project ScenarioGallery/ScenarioGallery.csproj
 ```
 
-Both projects reference `SpiceLogic.HtmlEditor.Avalonia` version `1.0.0` and Avalonia Desktop/Fluent `12.1.4`. Restore from a feed containing that package version. The control is commercially licensed separately from this sample code. Applications using a compiled commercial license assign their signed Avalonia key before creating controls:
+Both projects reference `SpiceLogic.HtmlEditor.Avalonia` version `1.0.2` and Avalonia Desktop/Fluent `12.1.4`. Restore from a feed containing that package version. The control is commercially licensed separately from this sample code. Applications using a compiled commercial license assign their signed Avalonia key before creating controls:
 
 ```csharp
 SpiceLogic.HtmlEditor.Avalonia.AvaloniaHtmlEditor.LicenseKey = "your-signed-Avalonia-key";
