@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType></PropertyGroup>
+  <Import Project="../Shared/SampleShell.projitems" />
+</Project>

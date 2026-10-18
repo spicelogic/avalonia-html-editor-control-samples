@@ -1,0 +1,7 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Program.cs" Link="Shared/Program.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleWindow.cs" Link="Shared/SampleWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleDocuments.cs" Link="Shared/SampleDocuments.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+<sample:SampleWindow xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sample="using:SpiceLogic.Samples"
+    xmlns:editor="using:SpiceLogic.HtmlEditor.Avalonia"
+    x:Class="SpiceLogic.Samples.MainWindow"
+    Title="Custom dialogs | SpiceLogic Avalonia HTML Editor"
+    Width="1180" Height="820" MinWidth="1040" MinHeight="640"
+    WindowStartupLocation="CenterScreen">
+  <sample:SampleWindow.Styles>
+    <Style Selector="Button"><Setter Property="Margin" Value="0,0,8,8" /><Setter Property="Padding" Value="14,8" /></Style>
+  </sample:SampleWindow.Styles>
+  <Grid RowDefinitions="Auto,Auto,*,Auto,Auto" Margin="18">
+    <StackPanel Margin="0,0,0,14" Spacing="5">
+      <TextBlock Text="Custom dialogs" FontSize="24" FontWeight="SemiBold" />
+      <TextBlock Text="Supply a fresh branded window for each dialog opening and retain guarded document updates." TextWrapping="Wrap" />
+    </StackPanel>
+    <WrapPanel x:Name="Actions" Grid.Row="1" IsEnabled="False">
+      <Button Content="Custom color picker" Click="Color_Click" />
+      <Button Content="Style settings" Click="Style_Click" />
+      <Button Content="Image properties" Click="Image_Click" />
+      <Button Content="Hyperlink" Click="Link_Click" />
+      <Button Content="Table" Click="Table_Click" />
+      <Button Content="Read HTML" Click="Export_Click" />
+    </WrapPanel>
+    <editor:AvaloniaHtmlEditor x:Name="Editor" Grid.Row="2" />
+    <Expander x:Name="OutputPanel" Grid.Row="3" Header="Application output" HorizontalAlignment="Stretch" Margin="0,8,0,0">
+      <TextBox x:Name="Output" Height="140" IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap" />
+    </Expander>
+    <TextBlock x:Name="Status" Grid.Row="4" Text="Starting the editor..." TextWrapping="Wrap" Margin="0,8,0,0" />
+  </Grid>
+</sample:SampleWindow>
