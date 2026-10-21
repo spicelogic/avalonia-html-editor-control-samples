@@ -6,7 +6,7 @@
     <LangVersion>12</LangVersion>
     <IsPackable>false</IsPackable>
     <AvaloniaVersion>12.1.4</AvaloniaVersion>
-    <HtmlEditorVersion>1.0.2</HtmlEditorVersion>
+    <HtmlEditorVersion>1.0.3</HtmlEditorVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SpiceLogic.HtmlEditor.Avalonia" Version="$(HtmlEditorVersion)" />

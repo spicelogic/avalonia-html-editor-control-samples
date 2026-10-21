@@ -24,7 +24,7 @@ In Visual Studio or Rider, open **AvaloniaHtmlEditorSamples.sln** and choose an 
 - Windows 11 x64 with the **Microsoft Edge WebView2 Runtime** for the qualified native configuration.
 - Internet access for the first NuGet restore. After packages are cached, the examples do not need a document server.
 
-The control targets Avalonia desktop applications. Native macOS and Linux behavior has not yet been qualified; these examples are not mobile or browser applications. See the [platform requirements](https://spicelogic.com/docs/avalonia-html-editor-control).
+The control targets Avalonia desktop applications, with Windows 11 x64 as the qualified release platform. A separate native suite checks Ubuntu 24.04 Xorg; macOS qualification is deferred. See the [platform requirements](https://spicelogic.com/docs/avalonia-html-editor-control).
 
 ## Choose a sample
 
@@ -46,7 +46,7 @@ The topics mirror our [WPF sample collection](https://github.com/spicelogic/wpf-
 ## Add the control to your application
 
 ```shell
-dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.2
+dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.3
 ```
 
 Declare the editor in an Avalonia window:
