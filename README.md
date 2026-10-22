@@ -46,7 +46,7 @@ The topics mirror our [WPF sample collection](https://github.com/spicelogic/wpf-
 ## Add the control to your application
 
 ```shell
-dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.5
+dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.6
 ```
 
 Declare the editor in an Avalonia window:
