@@ -16,6 +16,16 @@ Run the command from the repository root, or choose this project as the startup 
 
 The sample's application buttons remain English because they belong to the host application. `EditorLanguage` changes the editor UI, not your application culture or authored text. No dictionary download is required for the bundled choices.
 
+## Find and customize every label
+
+The [localization folder](SpiceLogic.HtmlEditor.Localization) contains the complete
+[JSON key catalog](SpiceLogic.HtmlEditor.Localization/_OVERRIDABLE-KEYS.reference.json),
+an [English override example](SpiceLogic.HtmlEditor.Localization/EditorStrings.en-US.json),
+and the [download, edit, load and rerun instructions](SpiceLogic.HtmlEditor.Localization/README.md).
+Use the catalog to find the actual key, then include only the entries you want to
+change in your culture file. The sample keeps its built-in wording until you add
+the documented startup call.
+
 **Read HTML** exports the current complete document after applying any pending Source draft. No file is written and no message is sent.
 
 ## Read the code
