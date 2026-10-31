@@ -21,10 +21,10 @@ In Visual Studio or Rider, open **AvaloniaHtmlEditorSamples.sln** and choose an 
 ### Requirements
 
 - .NET SDK **9.0.300 or newer**, with SDK 10 recommended. The samples target .NET 8; Avalonia 12.1.4's analyzers need the newer compiler.
-- Windows 11 x64 with the **Microsoft Edge WebView2 Runtime** for the qualified native configuration.
+- The native browser runtime for your operating system: **WebView2 on Windows**, the system **WKWebView on macOS**, or **WebKitGTK on the tested Ubuntu/Xorg configuration**.
 - Internet access for the first NuGet restore. After packages are cached, the examples do not need a document server.
 
-The control targets Avalonia desktop applications, with Windows 11 x64 as the qualified release platform. A separate native suite checks Ubuntu 24.04 Xorg; macOS qualification is deferred. See the [platform requirements](https://spicelogic.com/docs/avalonia-html-editor-control).
+The control targets Windows, macOS and Linux desktop applications. Native editor testing has completed on Windows 11 x64, Apple M1 arm64 macOS and Ubuntu 24.04.5 x64 with Xorg, including the complete 63-case Mac native desktop suite. See the [tested configurations and platform prerequisites](https://spicelogic.com/docs/avalonia-html-editor-control/startup/supported-platforms-536) for the tested candidates, coverage and remaining qualification limits.
 
 ## Choose a sample
 
@@ -46,8 +46,10 @@ The topics mirror our [WPF sample collection](https://github.com/spicelogic/wpf-
 ## Add the control to your application
 
 ```shell
-dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.6
+dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.12
 ```
+
+The samples pin their editor and Avalonia dependencies in [Directory.Build.props](Directory.Build.props) so all ten projects restore the same package versions.
 
 Declare the editor in an Avalonia window:
 

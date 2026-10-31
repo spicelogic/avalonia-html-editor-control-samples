@@ -11,7 +11,7 @@ Run the command from the repository root, or choose this project as the startup 
 ## Try it
 
 1. Choose **German interface** or **French interface** and inspect the editor's toolbar tooltips and built-in dialogs.
-2. Choose **English spelling** while keeping the German interface. The spelling language is independent of `Language`.
+2. Choose **English spelling** while keeping the German interface. Choosing a spelling language pins it, so it no longer follows `Language`.
 3. Choose **German spelling** to rescan with that bundled dictionary, then return to **English interface** as needed.
 
 The sample's application buttons remain English because they belong to the host application. `EditorLanguage` changes the editor UI, not your application culture or authored text. No dictionary download is required for the bundled choices.

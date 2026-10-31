@@ -11,7 +11,7 @@ Run the command from the repository root, or choose this project as the startup 
 ## Try it
 
 1. Place the caret in the greeting and choose **Insert customer field**.
-2. Place it in the message body and choose **Insert project field**. Both fields are also registered with the built-in placeholder interface.
+2. Place it in the message body and choose **Insert project field**. Both fields are declared once in `Content.MailMerge.PlaceholderFields`; your own commands decide where they are inserted.
 3. Choose **List remaining fields** to inspect the placeholders present in the document.
 4. Choose **Merge sample values**. The customer value `Café <North>` appears as literal text, and the project becomes `Autumn launch`.
 5. Choose **Undo merge** to return to the template.

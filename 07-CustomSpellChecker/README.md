@@ -10,7 +10,7 @@ Run the command from the repository root, or choose this project as the startup 
 
 ## Try it
 
-1. Choose **Use custom vocabulary**. The deliberately misspelled `delivrey` is flagged while Northfield and onboarding are accepted.
+1. When the window opens, the bundled dictionary underlines Northfield, onboarding and delivrey as you would expect. Choose **Use custom vocabulary**. The deliberately misspelled `delivrey` is flagged while Northfield and onboarding are accepted.
 2. Choose **Review spelling** and inspect the `delivery` suggestion. Apply it through the real spelling dialog.
 3. Choose **Use bundled dictionary** to return to the normal Hunspell engine.
 

@@ -22,7 +22,7 @@
       <Button Content="German spelling" Click="GermanSpelling_Click" />
       <Button Content="Read HTML" Click="Export_Click" />
     </WrapPanel>
-    <editor:AvaloniaHtmlEditor x:Name="Editor" Grid.Row="2" />
+    <editor:AvaloniaHtmlEditor x:Name="Editor" Grid.Row="2" EnableInlineSpellChecking="True" />
     <Expander x:Name="OutputPanel" Grid.Row="3" Header="Application output" HorizontalAlignment="Stretch" Margin="0,8,0,0">
       <TextBox x:Name="Output" Height="140" IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap" />
     </Expander>
