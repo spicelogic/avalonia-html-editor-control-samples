@@ -46,7 +46,7 @@ The topics mirror our [WPF sample collection](https://github.com/spicelogic/wpf-
 ## Add the control to your application
 
 ```shell
-dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.13
+dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.14
 ```
 
 The samples pin their editor and Avalonia dependencies in [Directory.Build.props](Directory.Build.props) so all ten projects restore the same package versions.
