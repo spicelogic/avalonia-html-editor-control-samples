@@ -35,7 +35,7 @@ The control targets Windows, macOS and Linux desktop applications. Native editor
 | 03 | [Theme and appearance](03-ThemeAndAppearance) | Switch Light/Dark themes, change toolbar icon size and deliberately reapply document body defaults. |
 | 04 | [Toolbar customization](04-ToolbarCustomization) | Override stock Save, hide and restore a built-in button, and call formatting from your own toolbar. |
 | 05 | [Mail merge templates](05-MailMergeTemplate) | Insert named fields, discover outstanding fields, merge literal customer values and undo the merge. |
-| 06 | [Localization](06-Localization) | Change English, German and French editor UI independently of the spelling dictionary. |
+| 06 | [Localization](06-Localization) | Choose a built-in interface language or load a Custom JSON translation, independently of the spelling dictionary. |
 | 07 | [Custom spell checker](07-CustomSpellChecker) | Implement `ISpellCheckerEngine`, provide suggestions and switch between your vocabulary and bundled dictionaries. |
 | 08 | [Custom dialogs](08-CustomDialog) | Build a color picker and customize all ten public dialog factories, including nested colors. |
 | 09 | [Custom context menu](09-CustomContextMenu) | Build a right-click menu using current selection and read-only state, then restore the default menu. |
@@ -46,7 +46,7 @@ The topics mirror our [WPF sample collection](https://github.com/spicelogic/wpf-
 ## Add the control to your application
 
 ```shell
-dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.0.14
+dotnet add package SpiceLogic.HtmlEditor.Avalonia --version 1.1.0
 ```
 
 The samples pin their editor and Avalonia dependencies in [Directory.Build.props](Directory.Build.props) so all ten projects restore the same package versions.

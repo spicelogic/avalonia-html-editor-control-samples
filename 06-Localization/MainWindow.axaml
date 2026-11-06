@@ -18,6 +18,7 @@
       <Button Content="English interface" Click="English_Click" />
       <Button Content="German interface" Click="German_Click" />
       <Button Content="French interface" Click="French_Click" />
+      <Button Content="Custom interface" Click="Custom_Click" />
       <Button Content="English spelling" Click="EnglishSpelling_Click" />
       <Button Content="German spelling" Click="GermanSpelling_Click" />
       <Button Content="Read HTML" Click="Export_Click" />

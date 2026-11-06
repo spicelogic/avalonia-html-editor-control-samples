@@ -2,6 +2,6 @@
   <PropertyGroup><OutputType>WinExe</OutputType></PropertyGroup>
   <Import Project="../Shared/SampleShell.projitems" />
   <ItemGroup>
-    <None Update="SpiceLogic.HtmlEditor.Localization/EditorStrings.en-US.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="SpiceLogic.HtmlEditor.Localization/EditorStrings.*.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
